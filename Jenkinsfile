@@ -7,6 +7,8 @@ pipeline {
                    sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
+          docker build -t Hello .
+           docker images
                 '''
                 echo 'Building..'
             }
